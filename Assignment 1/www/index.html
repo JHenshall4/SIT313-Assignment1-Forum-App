@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+        <title>SIT313 - Assignment 1 (Forum)</title>
+    </head>
+    <body>
+
+        <!-- Menus -->
+        <div class="Uppermenu">
+            <img src="images/logo.png" class="title_img" id="logo" onclick="legal()">
+        </div>
+
+        <div class="Lowermenu"> <!-- Using divs instead of buttons because they're easier to manage and look nicer -- Will use text instead of images like most app navigation
+                                    Break is included to center buttons vertically. Was having issues with the CSS but this did the trick.-->
+            <div id="main_btn" class="testing" onclick="mainPage()"><br />Main</div>
+            <div id="search_btn" class="testing" onclick="searchPage()"><br />Search</div>
+            <div id="account_btn" class="testing" onclick="accountPage()"><br />Account</div>
+            <div id="trending_btn" class="testing" onclick="trendingPage()"><br />Trending</div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Board Index-->
+        <div class="app" id="boardIndex">
+            <!-- Header for current page-->
+            <div class="header"><h1>FORUM INDEX</h1>
+            </div>
+            <!-- Board index-->
+            <div class="IndexContainer" id="test">
+                <ul id="fourmIndex">
+                    <!-- Obtained all free use images and icons made by: http://www.freepik.com from http://www.flaticon.com -- which is licensed by http://creativecommons.org/licenses/by/3.0/-->
+                    <li><img src="images/outdoors.png" class="forumIndex_img" id="Outdoors" onclick="Forum()">
+                    <li><img src="images/kids.png" class="forumIndex_img" id="Kids" onclick="Forum()">
+                    <li><img src="images/science.png" class="forumIndex_img" id="Science" onclick="Forum()">
+                    <li><img src="images/household.png" class="forumIndex_img" id="Household" onclick="Forum()">
+                    <li><img src="images/hobbies.png" class="forumIndex_img" id="Hobbies" onclick="Forum()">
+                    <li><img src="images/foodanddrink.png" class="forumIndex_img" id="FoodandDrink" onclick="Forum()">
+                    <li><img src="images/IT.png" class="forumIndex_img" id="Technology" onclick="Forum()">
+                    <li><img src="images/fix-it.png" class="forumIndex_img" id="FixIt" onclick="Forum()">
+                    <li><img src="images/gifts.png" class="forumIndex_img" id="Gifts" onclick="Forum()">
+                    <li><img src="images/misc.png" class="forumIndex_img" id="Miscellaneous" onclick="Forum()">
+</ul>
+         
+            </div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Account Page -->
+        <div class="app" id="account">
+            <div class="header">
+                <h1>ACCOUNT MANAGEMENT</h1></div>
+
+            <div class="LoginContainer" id="LoginContainer">
+                <br /><br />
+                    Username: <input type="text" name="uname" /><br /><br />
+                    Password: &nbsp;&nbsp;<input type="password" name="pword" /> <br /><br />
+                <input type="checkbox" /> Remember me
+                <!--<button class="register_btn" id="register_btn" onclick="">Register</button>
+                <button class="forgot_btn" id="forgot_btn" onclick="">Forgot login?</button>-->
+
+                <!-- This app currently does not use a user account. This functionality is something that could be added into assignment 2.
+                    A user would be able to change their profile details and images and viewing another users would allow you to view their profile.
+                    A profile would also contain recent posts and comments by the user. Because of the extensive work this sytem would require.
+                    it has been postponed until database integration has been achieved-->
+            </div>
+        </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Search Page -->
+        <div class="app" id="search">
+            <div class="header">
+                <h1>SEARCH</h1>
+            </div>
+            <!-- Search bar -->
+            <div class="SearchContainer" id="SearchContainer">
+                <br /><br />
+                <input type="text" class="searchbar" id="searchbar" placeholder="Search by post, author or date:" onkeyup="searchFunction()" />
+                <br /><br />
+            </div>
+                <!-- Placeholder for search results-->
+                <div class="SearchResults" id="SearchResults">
+                    <h3>Search Results</h3>
+                </div>
+            
+        </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Trending-->
+        <div class="app" id="trending">
+            <div class="header">
+                <h1>Trending topics</h1>
+            </div>
+            <div class="TrendingContainer" id="TrendingContainer">
+
+                <!-- Placeholder for trending topics-->
+                <div class="trendingResults" id="trendingResults">
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Threads -->
+        <div class="app" id="threads">
+            <div class="header">
+                <p id="topic_title" class="topic_title"></p>
+            </div>
+            <div class="ThreadContainer" id="ThreadContainer">
+
+                <div class="ThreadOP" id="ThreadOP">
+                </div>
+
+                <div class="comments" id="comments"></div>
+            </div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Topics -->
+        <div class="app" id="topic">
+            <!-- Header for current page-->
+            <div class="header"><h1 id="topicHeader"></h1>
+            </div>
+            <!-- Board index-->
+            <div class="TopicList" id="TopicList">
+            </div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Legal -->
+        <div class="app" id="legal">
+            <!-- Header for current page-->
+            <div class="header">
+                <h1 id="topicHeader">LEGAL</h1>
+            </div>
+            <!-- Board index-->
+            <div class="TopicList" id="TopicList">
+                <p style="color: #FFFFFF;">All images were taken from Flaticon and made by Freepik and modified by myself (added text)
+                Below are the references for ALL image content:
+                <div style="color:#FFFFFF;">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</p>
+
+            </div>
+        </div>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <!-- Adding scripts from jquery and jquery mobile   01/08/17-->
+        <script src="scripts/jquery-2.2.4.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>

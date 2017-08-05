@@ -1,0 +1,437 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+	background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+	
+    background-color:#32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size:12px;
+}
+
+
+.Uppermenu {
+    background-color: lightgrey;
+    position: absolute;
+    width: 100%;
+    height: 7.5%;
+    margin: 0px;
+}
+
+
+
+.Lowermenu {
+    background-color: lightgrey;
+    position: absolute;
+    top: 92.5%;
+    width: 100%;
+    height: 7.5%;
+    margin: 0px;
+}
+
+.app {
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    bottom: 7.5%;
+    background-color: #444149;
+    font-family: Helvetica; /*Keeping fonts web safe :(*/
+}
+
+.header {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 5%;
+    background-color: #444149;
+    color: #dcdade;
+
+}
+
+.IndexContainer {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 20%;
+    background-color: #444149;
+    padding: 0px;
+}
+
+.TopicList {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 20%;
+    background-color: #444149;
+    padding: 0px;
+}
+
+.SearchContainer {
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    bottom: 20%;
+    background-color: #444149;
+    padding: 0px;
+}
+
+.TrendingContainer {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 20%;
+    background-color: #444149;
+    padding: 0px;
+}
+
+.searchbar{
+    font-size: 12px;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #ddd; 
+    margin-left: 0.5px;
+    
+
+}
+
+.SearchResults {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 30%;
+    background-color: #444149;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.trendingResults {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #444149;
+    overflow-y: scroll;
+}
+
+.register_btn{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+
+}
+
+.forgot_btn{
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+
+}
+
+.centeredText{
+    text-align: center;
+    line-height: 1px;
+}
+
+.LoginContainer {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 20%;
+    background-color: #444149;
+    padding: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.index {
+    position: absolute;             
+    left: 50%;
+    top: 30%;
+    height: 50px;                  
+    width: 225px;                   
+    text-align: center;
+    padding: 180px 0px 0px 0px;     
+    margin: -115px 0px 0px -112px;
+}
+
+.menuTitle {
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+    text-align: center;
+
+}
+
+ul#fourmIndex li {
+    display: inline;
+    margin: 0 0 300px 0;
+    line-height: 500%;
+}
+
+ul#example li {
+    display: inline-block;
+    list-style:none;
+    padding: 5px;
+    text-align:left;
+    left:1%;
+    width:96%;
+
+}
+
+.comment_list {
+    display: inline;
+    list-style: none;
+}
+
+
+
+.forumIndex_img{
+    margin:12px;
+}
+
+.title_img {
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+}
+
+img{
+    display:inline-block;
+    width:50px;
+    height:50px;
+}
+
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+th {
+    color: #ffffff;
+    text-align: left;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+tr {
+    color: #c4c4c4;
+}
+
+.topic_title {
+    font-size: 3.5vw;
+    color: #FFFFFF;
+    margin: 0px;
+    overflow: visible;
+    padding: 5px;
+    text-align: center;
+}
+
+.ThreadOP {
+    position: absolute;
+    width: 94.5%;
+    height: 23%;
+    top: 20%;
+    background-color: #444149;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0px 0px 40px 0px;
+    font-size: 12px;
+    overflow-y: scroll;
+    text-
+}
+
+.comments {
+    position: absolute;
+    height: 52%;
+    width: 100%;
+    top: 40%;
+    background-color: #444149;
+    padding: 0px;
+    margin: 40px 0px 40px 0px;
+    overflow-y:scroll;
+}
+
+.comment_post {
+    height: 10%;
+    width: 80%;
+    background-color: #444149;
+    padding: 20px;
+    margin: 40px 0px 40px 15px;
+    color: #c4c4c4;
+}
+
+h3{
+    text-align:center;
+
+}
+
+.threadTitle {
+    font-size: 18px;
+    text-align: left;
+    width: 80%;
+    margin: 0px 5px 0px 5px;
+    color: #ffffff;
+}
+
+.threadAuthor-Date {
+    text-align: left;
+    margin: 0px 5px 5px 5px;
+    color: #c4c4c4;
+}
+
+.event {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 0px 30px;
+    padding: 2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.topicResults {
+    display: none;
+    margin: 5px;
+    border-radius: 3px;
+    line-height: 40px;
+    width: 97%;
+}
+
+.topic{
+    width: 100%;
+
+}
+
+.author {
+    width: 100%;
+}
+
+
+/* Remove jquery loading */
+
+.ui-loader {
+	display: none;
+	z-index: 9999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border:0;
+}
+
+.testing {
+    display: inline-block;
+    width: 24.3%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+/* found solution for stretching search bar / input elements from: https://stackoverflow.com/questions/11730468/is-it-possible-to-style-a-text-input-to-fill-the-width-of-its-parent */
+input#searchbar {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.forumDivContainer {
+    width: 100%;
+    background-color: #444149;
+    
+}
+
+.theLine { /* used for general topic results*/
+    border-bottom: 1px solid grey;
+    width:82%;
+    padding: 10px;
+}
+
+
+.theLine2 { /* used for the first topic result -- Issues with this line scaling correctly on different resolutions*/
+    position: absolute;
+    left: 12%;
+    border-bottom: 1px solid grey;
+    width: 75%;
+}
+
+.theLine3 { /* used after topics original post*/
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    border-bottom: 1px solid grey;
+    width: 90%;
+}
+
+
+.threadCategory {
+    padding: 5px;
+    margin: 0px;
+    line-height: 5px;
+    color: #c4c4c4;
+}
